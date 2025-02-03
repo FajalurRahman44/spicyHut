@@ -1,0 +1,131 @@
+:root{
+    --yellow:#E9B824;
+    --orange:#EE9322;
+    --red:#D83F31;
+    --lightgreen:#219C90;
+    --white:whitesmoke;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(imgz/pexels-jessica-lewis-858094.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+}
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+    min-width: 145px;
+}
+header{
+    display:flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+
+}
+#logo{
+    flex:3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+nav{
+    flex:2;
+    display:flex;
+   
+}
+nav a{
+    flex:1;
+    
+}
+.maintext{
+    display:flex;
+    flex-direction:column;
+    padding:2em;
+    justify-content: center;
+    height:50vh;
+}
+.tagline1{
+    color:var(--red);
+    font-family: 'Zeyada', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.tagline2{
+    color:var(--lightgreen);
+    font-family: 'Great Vibes', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.maintext button{
+    width: 20vw;
+    margin-top:2em;
+    padding:.7em;
+    border-radius: 10px;
+    background-color: var(--orange);
+    border: whitesmoke solid 2px;
+}
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+    background: linear-gradient(to right,gray,black);
+    color:aliceblue; 
+
+}
+#menuheading,#locheading{
+    background: linear-gradient(to right,gray,black);
+    font-size: 2.5em;
+    color:var(--red);
+    display:flex;
+    justify-content: center;
+}
+th{
+    color: var(--lightgreen);
+    font-size: 1.8em;
+}
+table{
+    width:100%;
+    padding:1em;
+}
+.menu tr
+{
+  display:flex;  
+  justify-content: center;
+  margin-top:.9em;
+}
+.menu td:nth-child(1){
+    justify-self:left;
+    flex:1;
+}
+.menu td:nth-child(2){
+    justify-self:right;
+}
+.maincourse{
+    grid-row:span 2;
+}
+.location{
+  background: linear-gradient(to right,gray,black);
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+.location h2{
+    color: var(--lightgreen);
+    margin-bottom: .8em;
+}
+.location div{
+    flex:1;
+    padding:1em;
+    min-width: 200px;
+}
+footer{
+    background-color: black;
+    color: #E9B824;
+    padding: .25em 1em;
+}
+i{
+    padding-right: 5px;
+}
